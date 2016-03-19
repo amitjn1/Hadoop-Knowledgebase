@@ -23,3 +23,5 @@ mysql> select user();
 +----------------+
 | root@localhost |
 +----------------+
+#connect with specifying host name
+shell>mysql --host=quickstart.cloudera --user=retail_dba --password=cloudera retail_db
