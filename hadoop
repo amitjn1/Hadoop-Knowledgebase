@@ -1,0 +1,7 @@
+#both commands are identical
+hadoop fs -ls
+hdfs dfs -ls
+
+#display contents of all files in a hdfs directory
+hadoop fs -cat /user/cloudera/categories/part*
+
