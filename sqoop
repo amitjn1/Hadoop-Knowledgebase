@@ -1,3 +1,6 @@
-#Help
->sqoop help
+#Help --> lists sqoop commands 
+$ sqoop help
+
+#Help on specific command==> sqoop <command> --help
+$ sqoop import --help
 
