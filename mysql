@@ -1,0 +1,3 @@
+#Connection string usage:
+shell> mysql --host=localhost --user=myname --password mydb
+shell> mysql -h localhost -u myname -p mydb
