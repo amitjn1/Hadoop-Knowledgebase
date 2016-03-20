@@ -1,2 +1,17 @@
 #to find host name on linux
 shell>hostname
+
+#permissions
+#These are the examples from the symbolic notation section given in octal notation:
+#Symbolic Notation	Numeric Notation	English
+----------	0000	no permissions
+---x--x--x	0111	execute
+--w--w--w-	0222	write
+--wx-wx-wx	0333	write & execute
+-r--r--r--	0444	read
+-r-xr-xr-x	0555	read & execute
+-rw-rw-rw-	0666	read & write
+-rwxrwxrwx	0777	read, write, & execute
+-rwxr-----	0740	user can read, write, & execute; group can only read; others have no permissions
+
+$ hdfs dfs -chmod 664 <dir/file> 
