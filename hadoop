@@ -1,7 +1,23 @@
 #both commands are identical
-hadoop fs -ls
-hdfs dfs -ls
+$ hadoop fs -ls
+$ hdfs dfs -ls
 
 #display contents of all files in a hdfs directory
-hadoop fs -cat /user/cloudera/categories/part*
+$ hadoop fs -cat /user/cloudera/categories/part*
+
+#delete directory called categories
+$ hadoop fs -rm -R /user/cloudera/categories
+
+#check all available commands
+$ hadoop fs
+
+#get help on specific command--> hadoop fs -help <command>
+$ hadoop fs -help ls
+
+#find your identity or username
+$ whoami
+
+#location of hadoop config files: hadoop fs -rm -R /user/cloudera/categories
+/etc/hadoop/conf.cloudera.hdfs/hdfs-site.xml
+/etc/hadoop/conf.cloudera.hdfs/core-site.xml
 
