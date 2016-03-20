@@ -1,6 +1,9 @@
 #Connection string usage:
-shell> mysql --host=localhost --user=myname --password mydb
-shell> mysql -h localhost -u myname -p mydb
+$ mysql --host=<localhost> --user=<myname> --password=<pwd> <dbname>
+$ mysql -h localhost -u myname -p mydb
+
+#connect with specifying host name
+$ mysql --host=quickstart --user=retail_dba --password=cloudera retail_db
 
 #If you want to know the port number of your local host on which Mysql is running you can use this query on MySQL Command line client --
 mysql> SHOW VARIABLES WHERE Variable_name = 'port';
@@ -10,9 +13,6 @@ mysql> SHOW VARIABLES WHERE Variable_name = 'hostname';
 
 #If you want to know the username of your Mysql you can use this query on MySQL Command line client --
 mysql> select user();
-
-#connect with specifying host name
-shell>mysql --host=quickstart.cloudera --user=retail_dba --password=cloudera retail_db
 
 #select top 10 records
 select * from categories limit 10;
