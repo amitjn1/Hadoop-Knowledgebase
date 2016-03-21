@@ -11,3 +11,5 @@ active - which is a BOOLEAN.
 # Hive command for detailed table desc
 hive> describe formatted <tablename>;
 
+#Hive show create table statement
+hive> SHOW CREATE TABLE myTable;
