@@ -4,3 +4,6 @@ $ sqoop help
 #Help on specific command==> sqoop <command> --help
 $ sqoop import --help
 
+# Hive import: drop existing hive table and delete hdfs dir in user's home before running import
+hive> drop table <table name>;
+$ hdfs dfs -rm -r <table name dir>
