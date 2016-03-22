@@ -1,0 +1,5 @@
+# invoke impala
+$ impala-shell
+
+# refresh metadata in impala
+$ invalidate metadata;
