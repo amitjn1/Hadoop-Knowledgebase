@@ -13,3 +13,5 @@ hive> describe formatted <tablename>;
 
 #Hive show create table statement
 hive> SHOW CREATE TABLE myTable;
+
+#hive-site.xml stores location of hive meta store and hdfs
