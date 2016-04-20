@@ -15,3 +15,7 @@ shell>hostname
 -rwxr-----	0740	user can read, write, & execute; group can only read; others have no permissions
 
 $ hdfs dfs -chmod 664 <dir/file> 
+
+#setup password less sudo by editing /etc/sudoers file
+#add user name at the end
+<userid> ALL=NOPASSWD: ALL
