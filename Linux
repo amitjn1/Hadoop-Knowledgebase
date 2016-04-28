@@ -19,3 +19,10 @@ $ hdfs dfs -chmod 664 <dir/file>
 #setup password less sudo by editing /etc/sudoers file
 #add user name at the end
 <userid> ALL=NOPASSWD: ALL
+
+#to see wether a package is installed
+rpm -q <package name>
+for example: rpm -q wget
+
+# install package
+yum install <package name>
