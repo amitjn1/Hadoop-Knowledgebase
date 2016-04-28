@@ -1,0 +1,10 @@
+$ wget https://dist.apache.org/repos/dist/release/kylin/apache-kylin-1.5.1/apache-kylin-1.5.1-bin.tar.gz
+$ tar -xzvf apache-kylin-1.5.1-bin.tar.gz
+$ export KYLIN_HOME=/home/devuser/apache-kylin-1.5.1-bin
+# to check configuration
+$ apache-kylin-1.5.1-bin/bin/check-env.sh
+# to start kylin
+$ apache-kylin-1.5.1-bin/bin/kylin.sh start
+#web access
+http://172.16.10.46:7070/kylin/
+# username/password is ADMIN/KYLIN
