@@ -20,3 +20,5 @@ hive> SHOW CREATE TABLE myTable;
 alter table store_sales drop partition (ss_sold_date_sk = 2451249)
 # or a range a partitions
 alter table store_sales drop partition (ss_sold_date_sk > 2451249)
+# check isnumeric
+select x from table where cast(field as int) is not null
