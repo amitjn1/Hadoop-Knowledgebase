@@ -15,3 +15,8 @@ hive> describe formatted <tablename>;
 hive> SHOW CREATE TABLE myTable;
 
 #local fs /etc/hive/conf/hive-site.xml stores location of hive meta store and hdfs
+
+# drop/delete partition from a table
+alter table store_sales drop partition (ss_sold_date_sk = 2451249)
+# or a range a partitions
+alter table store_sales drop partition (ss_sold_date_sk > 2451249)
