@@ -1,0 +1,11 @@
+Automatically adjusting/correcting indentation
+
+In general, ={motion} will align code to an indentation level.
+
+== align the current line
+=i{ align the inner block
+=% align to the matching parenthesis/bracket under the cursor
+=14j or 14== align the next 14 lines
+=G align to the end of the file
+vG= same thing, align to the end of the file (but using visual mode)
+vjjj= align four lines (using visual mode)
