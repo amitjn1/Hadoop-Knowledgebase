@@ -21,3 +21,8 @@ $ whoami
 /etc/hadoop/conf.cloudera.hdfs/hdfs-site.xml
 /etc/hadoop/conf.cloudera.hdfs/core-site.xml
 
+#HDFS disk space
+#Try this:
+hdfs dfsadmin -report
+#With older versions of Hadoop, try this:
+hadoop dfsadmin -report
