@@ -26,3 +26,7 @@ for example: rpm -q wget
 
 # install package
 yum install <package name>
+
+# Add existing user to a group 
+usermod -a -G ftp tony
+
