@@ -33,4 +33,9 @@ usermod -a -G ftp tony
 #search file in all underlying folders
 sudo find /var/run/ -type f -name "hdfs.keytab"
 
- 
+#ping a ip and port
+$ telnet localhost 139
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+
