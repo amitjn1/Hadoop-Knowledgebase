@@ -4,6 +4,11 @@ $ sqoop help
 #Help on specific command==> sqoop <command> --help
 $ sqoop import --help
 
+#install and test SQLServer connector
+curl -L 'http://download.microsoft.com/download/0/2/A/02AAE597-3865-456C-AE7F-613F99F850A8/sqljdbc_4.0.2206.100_enu.tar.gz' | tar xz
+sudo cp sqljdbc_4.0/enu/sqljdbc4.jar /var/lib/sqoop/
+sqoop list-databases --connect jdbc:sqlserver://99.9.9.99:9999 --username xxx --password xxxxxxx
+
 # Hive import: drop existing hive table and delete hdfs dir in user's home before running import
 hive> drop table <table name>;
 $ hdfs dfs -rm -r <table name dir>
