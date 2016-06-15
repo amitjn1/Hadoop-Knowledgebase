@@ -26,3 +26,6 @@ $ whoami
 hdfs dfsadmin -report
 #With older versions of Hadoop, try this:
 hadoop dfsadmin -report
+
+# hdfs directory size
+hadoop fs -du -h /user/devuser
