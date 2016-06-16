@@ -1,0 +1,3 @@
+#Install fails with default parameters. following 2 steps need to be done in Kafka Broker Configuration in Cloudera Manager:
+1. broker_max_heap_size increase to 256MB as recommneded
+2. if Kafka service still fails with message: Configured brokerId XX doesn't match stored brokerId YY in meta.properties, then modify the meta.properties file in folder specified in log.dirs setting to the expected brokerid
