@@ -9,3 +9,10 @@ In general, ={motion} will align code to an indentation level.
 =G align to the end of the file
 vG= same thing, align to the end of the file (but using visual mode)
 vjjj= align four lines (using visual mode)
+
+# delete all line
+:1,$d
+
+# delete one line
+dd
+
