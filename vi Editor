@@ -16,3 +16,11 @@ vjjj= align four lines (using visual mode)
 # delete one line
 dd
 
+# disable search highlighting
+:noh
+
+#Search for strings
+/string	Search forward for string
+?string	Search back for string
+n	Search for next instance of string
+N	Search for previous instance of string
