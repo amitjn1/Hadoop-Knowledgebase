@@ -1,0 +1,3 @@
+#dir size
+hadoop fs -du -h /user
+ 
