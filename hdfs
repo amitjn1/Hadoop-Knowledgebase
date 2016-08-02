@@ -1,3 +1,6 @@
-#dir size
+#show dir size
 hadoop fs -du -h /user
- 
+
+#cleanup trash folders
+hadoop fs -expunge
+
