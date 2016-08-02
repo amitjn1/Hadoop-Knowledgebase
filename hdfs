@@ -4,3 +4,4 @@ hadoop fs -du -h /user
 #cleanup trash folders
 hadoop fs -expunge
 
+# Try -skiptrash option while deleting. This will delete forever.
