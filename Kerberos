@@ -1,0 +1,7 @@
+#Install Kerberos on Cloudera Quick Start VM
+
+1. Download JCE policy files (http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html) --> UnlimitedJCEPolicyJDK7.zip and copy under /root/ folder
+2. Install Kerberos client from terminal (/home/cloudera): sudo ./kerberos
+3. Download goKerberos_beforeCM.sh from https://github.com/git4impatient/quickKerberos/archive/master.zip
+4. "sudo su" and then run the script ./goKerberos_beforeCM.sh from command line
+5. Follow the blog after this to enable kerberos in CM
