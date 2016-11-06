@@ -2,6 +2,30 @@
 
 1. Download JCE policy files (http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html) --> UnlimitedJCEPolicyJDK7.zip and copy under /root/ folder
 2. Install Kerberos client from terminal (/home/cloudera): sudo ./kerberos
+message after successful install
+====================================================================================================
+Success! Kerberos is now running. You can enable Kerberos in a Cloudera Manager
+cluster from the drop-down menu for that cluster on the CM home page. It will
+ask you to confirm that this script performed the following steps:
+
+    * set up a working KDC.
+    * checked that the KDC allows renewable tickets.
+    * installed the client libraries.
+    * created a proper account for Cloudera Manager.
+
+Then, it will prompt you for the following details (accept defaults if not
+specified here):
+
+    KDC Type:                MIT KDC
+    KDC Server Host:         quickstart.cloudera
+    Kerberos Security Realm: CLOUDERA
+
+Later, it will prompt you for KDC account manager credentials:
+
+    Username: cloudera-scm/admin (@ CLOUDERA)
+    Password: cloudera
+
+====================================================================================================
 3. Download goKerberos_beforeCM.sh from https://github.com/git4impatient/quickKerberos/archive/master.zip
 4. "sudo su" and then run the script ./goKerberos_beforeCM.sh from command line
 5. Follow the blog after this to enable kerberos in CM
