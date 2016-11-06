@@ -30,4 +30,30 @@ Later, it will prompt you for KDC account manager credentials:
 4. "sudo su" and then run the script ./goKerberos_beforeCM.sh from command line
 5. Follow the blog after this to enable kerberos in CM:
 http://blog.cloudera.com/blog/2015/03/how-to-quickly-configure-kerberos-for-your-apache-hadoop-cluster/
+Resultset looks like this after install:
+======================================================================================================
+[logging]
+ default = FILE:/var/log/krb5libs.log
+ kdc = FILE:/var/log/krb5kdc.log
+ admin_server = FILE:/var/log/kadmind.log
 
+[libdefaults]
+ default_realm = CLOUDERA
+ dns_lookup_realm = false
+ dns_lookup_kdc = false
+ ticket_lifetime = 24h
+ renew_lifetime = 7d
+ forwardable = true
+
+[realms]
+ CLOUDERA = {
+  kdc = quickstart.cloudera
+  admin_server = quickstart.cloudera
+  max_renewable_life = 7d 0h 0m 0s
+  default_principal_flags = +renewable
+ }
+
+[domain_realm]
+ .cloudera = CLOUDERA
+ cloudera = CLOUDERA
+=======================================================================================================
