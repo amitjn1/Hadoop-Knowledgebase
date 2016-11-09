@@ -1,0 +1,2 @@
+# To run Sqoop jobs in Oozie copy the jdbc driver for relevant database in HDFS folder, for example:
+hdfs dfs -put sqljdbc_4.0/enu/sqljdbc4.jar /user/oozie/share/lib/lib_20161101230040/sqoop/
