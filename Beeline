@@ -9,3 +9,14 @@ config property "hive.server2.thrift.port" displays port to be used in url Ref==
 5. kinit -kt hive.keytab <principal in 4.>
 6. beeline -u 'jdbc:hive2://<host>:10000/default;principal=<principal in 4.>'
 7. execute show databases;
+
+#Alternate:
+# Replace $HIVESERVER2 with the correct hostname that's running the HS2
+HIVESERVER2=
+REALM=`awk '/^default_realm/{print $3}' /etc/krb5.conf`
+BKOPTS=";principal=hive/_HOST@${REALM}"
+BTOPTS=";ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;trustStorePassword=changeit"
+
+beeline -u "jdbc:hive2://${HIVESERVER2}:10000/${BKOPTS}${BTOPTS}"
+ OR
+beeline -u "jdbc:hive2://<host>:10000/;principal=<pric>;ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;trustStorePassword=changeit"
