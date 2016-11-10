@@ -1,6 +1,6 @@
 Could you check the principal of HiveServer2 and set it to beeline's principal?
 Ex.(Please replace "<>" part for your env)
-config property "hive.server2.thrift.port" displays port to be used in url
+config property "hive.server2.thrift.port" displays port to be used in url Ref==> https://www.cloudera.com/documentation/enterprise/5-5-x/topics/cdh_ig_hiveserver2_configure.html
 --
 1. cd /var/run/cloudera-scm-agent/process/
 2. ls -dlrt *HIVESERVER2*
