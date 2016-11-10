@@ -7,5 +7,5 @@ config property "hive.server2.thrift.port" displays port to be used in url Ref==
 3. cd <last directory in 2.>
 4. klist -kt hive.keytab
 5. kinit -kt hive.keytab <principal in 4.>
-6. beeline -u 'jdbc:hive2://amz-devteam-analytics-cdh03.pointclickcare.com:10000/default;principal=<principal in 4.>'
+6. beeline -u 'jdbc:hive2://<host>:10000/default;principal=<principal in 4.>'
 7. execute show databases;
