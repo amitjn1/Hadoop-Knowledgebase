@@ -19,4 +19,4 @@ BTOPTS=";ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;t
 
 beeline -u "jdbc:hive2://${HIVESERVER2}:10000/${BKOPTS}${BTOPTS}"
  OR
-beeline -u "jdbc:hive2://<host>:10000/;principal=<pric>;ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;trustStorePassword=changeit"
+beeline -u "jdbc:hive2://<host>:10000/;principal=hive/_HOST@${REALM};ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;trustStorePassword=changeit"
