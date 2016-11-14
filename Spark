@@ -1,0 +1,5 @@
+#running spark shell in yarn mode
+spark-shell --master yarn-client
+
+http://www.cloudera.com/documentation/enterprise/5-5-x/topics/cdh_ig_running_spark_on_yarn.html
+
