@@ -20,3 +20,9 @@ BTOPTS=";ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;t
 beeline -u "jdbc:hive2://${HIVESERVER2}:10000/${BKOPTS}${BTOPTS}"
  OR
 beeline -u "jdbc:hive2://<host>:10000/;principal=hive/_HOST@${REALM};ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;trustStorePassword=changeit"
+
+#running beeline in debug mode
+#1. start beeline
+ beeline --verbose=true --showNestedErrs=true --showWarnings=true
+#2. Connect to data source
+ !connect "jdbc:hive2://<host>:10000/;principal=hive/_HOST@{realm};ssl=true;sslTrustStore=/usr/java/default/jre/lib/security/jssecacerts;trustStorePassword=changeit"
