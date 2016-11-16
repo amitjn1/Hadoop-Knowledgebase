@@ -57,3 +57,11 @@ Resultset looks like this after install:
  .cloudera = CLOUDERA
  cloudera = CLOUDERA
 =======================================================================================================
+
+
+#Kerberos authentication on windows client
+Download and Install MIT Kerberos for windows 64 bit version 4.0.1
+update krb5.ini in following location to atleast enter [libdefaults] and [realms] information
+C:\ProgramData\MIT\Kerberos5\krb5.ini
+copy this krb5.ini to C:\windows location as well.
+
