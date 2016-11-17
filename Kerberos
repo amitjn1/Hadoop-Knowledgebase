@@ -75,6 +75,7 @@ Double-click on network.negotiate-auth.trusted-uris. A dialogue box for editing 
 Enter the required hostname(s) and/or URL prefix(es) then click OK.
 Suitable values in this instance would be www.example.com or http://www.example.com/.
 
+On windows: change the value of network.auth-use-sspi to false
 
 
 
