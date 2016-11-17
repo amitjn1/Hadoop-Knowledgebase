@@ -65,3 +65,16 @@ update krb5.ini in following location to atleast enter [libdefaults] and [realms
 C:\ProgramData\MIT\Kerberos5\krb5.ini
 copy this krb5.ini to C:\windows location as well.
 
+=======================================================================================================
+
+#Configure Firefox to authenticate using SPNEGO and Kerberos
+Navigate to the URL about:config.
+Click past the warning of harmful consequences.
+Type negotiate-auth into the filter at the top of the page, in order to remove most of the irrelevant settings from the list.
+Double-click on network.negotiate-auth.trusted-uris. A dialogue box for editing the value should appear.
+Enter the required hostname(s) and/or URL prefix(es) then click OK.
+Suitable values in this instance would be www.example.com or http://www.example.com/.
+
+
+
+
