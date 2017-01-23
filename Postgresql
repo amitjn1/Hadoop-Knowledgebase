@@ -27,3 +27,10 @@ createdb database_name
 Connect to that database:
 
 psql -d database_name
+
+#Client connection
+#1. Update  /etc/postgresql/9.4/main/postgresql.conf to comment out following line and enter '*'
+listen_addresses = '*' 
+
+#2. Update /etc/postgresql/9.4/main/pg_hba.conf file to add following line 
+host all all [ip address of your client]/32 md5
