@@ -34,3 +34,15 @@ listen_addresses = '*'
 
 #2. Update /etc/postgresql/9.4/main/pg_hba.conf file to add following line 
 host all all [ip address of your client]/32 md5
+
+To start off, we need to set the password of the PostgreSQL user (role) called "postgres"; we will not be able to access the server externally otherwise. As the local “postgres” Linux user, we are allowed to connect and manipulate the server using the psql command.
+
+In a terminal, type:
+
+
+sudo -u postgres psql postgres
+this connects as a role with same name as the local user, i.e. "postgres", to the database called "postgres" (1st argument to psql).
+
+Set a password for the "postgres" database role using the command:
+
+\password postgres
