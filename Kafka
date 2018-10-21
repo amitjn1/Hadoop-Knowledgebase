@@ -6,3 +6,11 @@ then modify the meta.properties file in folder specified in log.dirs setting to 
 
 #Location of Kafka on Kafka Broker Node
 /usr/bin/kafka-topics
+
+#List Kafka Topics
+$ kafka-topics.sh --zookeeper 127.0.0.1:2181 --list
+
+#Put message in Topic(Queue)
+$ kafka-console-producer.sh --broker-list 127.0.0.1:9092 --topic <topic name>
+
+
