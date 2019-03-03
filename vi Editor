@@ -1,3 +1,4 @@
+after editing press <esc> then :x to save
 Automatically adjusting/correcting indentation
 
 In general, ={motion} will align code to an indentation level.
