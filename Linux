@@ -35,6 +35,12 @@ sudo find /var/run/ -type f -name "hdfs.keytab"
 #search text
 grep -n ".*searchText.*" <fileName>
 
+#search dir in subdirectories
+find YOUR_STARTING_DIRECTORY -type d -name "*99966*" -print
+Example:
+find ~ -type d -name "*99966*" -print
+should find all directories (-type d) starting from your home directory (~)that have their names containing the string "99966" (-name "*99966*") and output them (-print).
+
 #ping a ip and port
 $ telnet localhost 139
 Trying 127.0.0.1...
