@@ -39,7 +39,10 @@ grep -n ".*searchText.*" <fileName>
 find YOUR_STARTING_DIRECTORY -type d -name "*99966*" -print
 Example:
 find ~ -type d -name "*99966*" -print
-should find all directories (-type d) starting from your home directory (~)that have their names containing the string "99966" (-name "*99966*") and output them (-print).
+#should find all directories (-type d) starting from your home directory (~)that have their names containing the string "99966" (-name "*99966*") and output them (-print).
+#Find without the annoying permission denied message
+find ~ -type d -name "*99966*" -print 2>/dev/null
+
 
 #ping a ip and port
 $ telnet localhost 139
