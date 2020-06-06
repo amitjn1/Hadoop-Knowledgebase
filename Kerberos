@@ -78,4 +78,14 @@ Suitable values in this instance would be www.example.com or http://www.example.
 On windows: change the value of network.auth-use-sspi to false
 
 
+=============
 
+Generate keytab for user1
+
+The keytab will be generated in the current directory
+
+# sudo ktutil 
+ktutil: addent -password -p user1@DEV.COM -k 1 -e RC4-HMAC 
+Password for user1@DEV.COM: 
+ktutil: wkt user1.keytab 
+ktutil: q 
