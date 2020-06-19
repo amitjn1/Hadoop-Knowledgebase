@@ -52,3 +52,7 @@ Escape character is '^]'.
 
 #find your linux distribution
 cat /etc/*-release
+
+#To delete all zero byte files in the current directory and sub-directories, use the following find command syntax.
+$ cd /path/to/directory/to/delete/files
+$ find . -type f -size 0 -delete
