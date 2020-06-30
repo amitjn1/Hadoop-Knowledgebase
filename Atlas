@@ -1,0 +1,2 @@
+#install sample
+$ /opt/apache-atlas-2.0.0/bin/quick_start.py
