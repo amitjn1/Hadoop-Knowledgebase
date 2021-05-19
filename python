@@ -1,0 +1,4 @@
+## virtualenv commands
+
+# find all environments
+locate -b '\activate' | grep "/home"
