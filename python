@@ -6,3 +6,6 @@ locate -b '\activate' | grep "/home"
 # remove environment
 # There is no command for deleting your virtual environment. Simply deactivate it and rid your application of its artifacts by recursively removing it.
 sudo rm -rf venv
+
+# find package
+pip list --format=columns | grep tensorflow
